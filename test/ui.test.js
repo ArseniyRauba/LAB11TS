@@ -1,4 +1,3 @@
-require('chromedriver');
 const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 const path = require('path');
