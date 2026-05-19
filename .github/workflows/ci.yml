@@ -27,10 +27,8 @@ jobs:
         run: npm install
 
       - name: Run Selenium tests
-        run: |
-          chmod +x ./node_modules/.bin/mocha
-          npm test
-
+        run: npm test 
+        
   deploy:
     needs: test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
