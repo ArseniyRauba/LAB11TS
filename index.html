@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>QA Automation Page</title>
+</head>
+<body>
+    <h1>Сломанный заголовок</h1>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Введите имя" required><br><br>
+        <input type="email" id="email" placeholder="Введите email" required><br><br>
+        <button type="submit" id="submit-btn">Отправить</button>
+    </form>
+    <p id="message" style="display:none;">Форма отправлена!</p>
+
+    <script>
+        document.getElementById('contact-form').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('message').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
