@@ -1,5 +1,13 @@
 {
+  "name": "lab11ts",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha test/*.test.js"
+  },
   "dependencies": {
-    "mocha": "^11.7.5"
+    "chai": "^4.3.7",
+    "chromedriver": "^148.0.3",
+    "mocha": "^7.2.0",
+    "selenium-webdriver": "^4.10.0"
   }
 }
