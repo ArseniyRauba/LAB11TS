@@ -16,13 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22 # МЕНЯЕМ С 18 НА 22
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
 
       - name: Run Selenium tests
-        run: npm test
+        run: npx mocha test/*.test.js
 
   deploy:
     needs: test
