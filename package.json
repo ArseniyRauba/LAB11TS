@@ -5,9 +5,9 @@
     "test": "mocha test/*.test.js"
   },
   "dependencies": {
-    "chai": "^4.3.7",
-    "chromedriver": "^148.0.3",
-    "mocha": "^7.2.0",
-    "selenium-webdriver": "^4.10.0"
+    "mocha": "^11.0.0",
+    "selenium-webdriver": "^4.20.0",
+    "chromedriver": "^130.0.0",
+    "chai": "^4.3.7"
   }
 }
