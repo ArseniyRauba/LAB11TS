@@ -2,12 +2,11 @@
   "name": "lab11ts",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx mocha test/*.test.js --timeout 30000"
+    "test": "mocha test/*.test.js --timeout 30000 --exit"
   },
   "dependencies": {
-    "mocha": "^10.2.0",
-    "selenium-webdriver": "^4.20.0",
-    "chromedriver": "^130.0.0",
-    "chai": "^4.3.7"
+    "mocha": "10.2.0",
+    "selenium-webdriver": "4.20.0",
+    "chai": "4.3.7"
   }
 }
