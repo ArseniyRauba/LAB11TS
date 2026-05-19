@@ -27,7 +27,9 @@ jobs:
         run: npm install
 
       - name: Run Selenium tests
-        run: chmod +x ./node_modules/.bin/mocha
+        run: |
+          chmod +x ./node_modules/.bin/mocha
+          npm test
 
   deploy:
     needs: test
